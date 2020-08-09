@@ -103,7 +103,7 @@ def index():
     # Ukuran scatter menggambarkan berapa banyak pengguna yang telah menginstall aplikasi 
     X = df2['Reviews'].values # axis x
     Y = df2['Rating'].values # axis y
-    area = playstore['Reviews'].values/10000000 # ukuran besar/kecilnya lingkaran scatter plot
+    area = playstore['Installs'].values/10000000 # ukuran besar/kecilnya lingkaran scatter plot
     fig = plt.figure(figsize=(5,5))
     fig.add_subplot()
     # isi nama method untuk scatter plot, variabel x, dan variabel y
